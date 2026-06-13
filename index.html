@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sitio oficial de Marina, artista visual. Portafolio con obras, biografia y contacto."
+    />
+    <title>Marina | Artista Visual</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Marina",
+        "jobTitle": "Artista visual",
+        "description": "Artista especializada en ilustracion contemporanea y composicion de color.",
+        "url": "http://localhost:3000/",
+        "sameAs": ["https://www.instagram.com/"],
+        "knowsAbout": ["Ilustracion", "Composicion", "Arte digital"],
+        "workExample": [
+          {
+            "@type": "CreativeWork",
+            "name": "Luz Interior",
+            "genre": "Ilustracion digital"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Ciudad Serena",
+            "genre": "Arte conceptual"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Ritmo Natural",
+            "genre": "Composicion abstracta"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header class="site-header" role="banner">
+      <div class="container">
+        <p class="eyebrow">Portafolio oficial</p>
+        <h1>Marina, artista visual</h1>
+        <p class="intro-text">
+          Obras que exploran color, calma y movimiento desde una mirada
+          contemporanea.
+        </p>
+        <nav aria-label="Navegacion principal" role="navigation">
+          <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre la artista</a></li>
+            <li><a href="#obras">Obras</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido-principal" tabindex="-1">
+      <section id="inicio" class="hero" aria-labelledby="titulo-hero">
+        <div class="container">
+          <h2 id="titulo-hero">Una coleccion para mirar con pausa</h2>
+          <p>
+            Este sitio esta creado con HTML semantico, CSS organizado y buenas
+            practicas de accesibilidad para llegar a mas personas.
+          </p>
+          <a class="btn" href="#obras" aria-label="Ir a la seccion de obras"
+            >Ver obras</a
+          >
+        </div>
+      </section>
+
+      <section id="sobre" class="section" aria-labelledby="titulo-sobre">
+        <div class="container">
+          <h2 id="titulo-sobre">Sobre la artista</h2>
+          <p>
+            Marina desarrolla piezas de arte digital inspiradas en paisajes,
+            arquitectura y emociones cotidianas. Su trabajo combina contraste,
+            formas organicas y paletas armonicas.
+          </p>
+        </div>
+      </section>
+
+      <section id="obras" class="section section-alt" aria-labelledby="titulo-obras">
+        <div class="container">
+          <h2 id="titulo-obras">Obras destacadas</h2>
+          <div class="cards" role="list" aria-label="Lista de obras destacadas">
+            <article class="card" role="listitem">
+              <figure>
+                <svg
+                  class="art-preview"
+                  viewBox="0 0 300 180"
+                  role="img"
+                  aria-labelledby="obra1-titulo obra1-desc"
+                >
+                  <title id="obra1-titulo">Luz Interior</title>
+                  <desc id="obra1-desc">
+                    Ilustracion abstracta con un circulo dorado sobre un fondo
+                    azul profundo.
+                  </desc>
+                  <defs>
+                    <linearGradient id="grad1" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#12355b" />
+                      <stop offset="100%" stop-color="#3a86ff" />
+                    </linearGradient>
+                  </defs>
+                  <rect width="300" height="180" fill="url(#grad1)" />
+                  <circle cx="210" cy="76" r="34" fill="#ffd166" />
+                </svg>
+                <figcaption>
+                  <h3>Luz Interior</h3>
+                  <p>Ilustracion digital sobre contraste entre sombra y calma.</p>
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="card" role="listitem">
+              <figure>
+                <svg
+                  class="art-preview"
+                  viewBox="0 0 300 180"
+                  role="img"
+                  aria-labelledby="obra2-titulo obra2-desc"
+                >
+                  <title id="obra2-titulo">Ciudad Serena</title>
+                  <desc id="obra2-desc">
+                    Composicion con bloques geometricos en tonos turquesa,
+                    gris y crema.
+                  </desc>
+                  <rect width="300" height="180" fill="#edf6f9" />
+                  <rect x="25" y="58" width="72" height="92" fill="#3d5a80" />
+                  <rect x="108" y="44" width="82" height="106" fill="#98c1d9" />
+                  <rect x="199" y="68" width="78" height="82" fill="#ee6c4d" />
+                </svg>
+                <figcaption>
+                  <h3>Ciudad Serena</h3>
+                  <p>Arte conceptual inspirado en ritmos urbanos tranquilos.</p>
+                </figcaption>
+              </figure>
+            </article>
+
+            <article class="card" role="listitem">
+              <figure>
+                <svg
+                  class="art-preview"
+                  viewBox="0 0 300 180"
+                  role="img"
+                  aria-labelledby="obra3-titulo obra3-desc"
+                >
+                  <title id="obra3-titulo">Ritmo Natural</title>
+                  <desc id="obra3-desc">
+                    Curvas organicas en verde y naranja sobre un fondo claro.
+                  </desc>
+                  <rect width="300" height="180" fill="#f4f1de" />
+                  <path d="M0,130 C60,80 120,160 180,110 C220,74 260,126 300,90 L300,180 L0,180 Z" fill="#81b29a" />
+                  <path d="M0,170 C50,138 100,188 150,158 C220,118 265,174 300,150 L300,180 L0,180 Z" fill="#e07a5f" />
+                </svg>
+                <figcaption>
+                  <h3>Ritmo Natural</h3>
+                  <p>Composicion abstracta que representa movimiento organico.</p>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section" aria-labelledby="titulo-contacto">
+        <div class="container">
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p>
+            Para colaboraciones o encargos, escribe a
+            <a href="mailto:marina.artista@email.com">marina.artista@email.com</a>.
+          </p>
+          <a
+            class="btn btn-secondary"
+            href="mailto:marina.artista@email.com"
+            aria-label="Enviar correo a Marina"
+            >Solicitar informacion</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>&copy; 2026 Marina. Portafolio de artista visual.</p>
+      </div>
+    </footer>
+  </body>
+</html>
